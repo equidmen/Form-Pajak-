@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pajak Kendaraan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 20px;
+    }
+    .form-box {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #27ae60;
+      color: white;
+      padding: 14px;
+      border: none;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #219150;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-box">
+  <h2>Pajakmu Menjamin Kelancaran Jalanmu!</h2>
+  <p>Silakan isi form singkat di bawah ini untuk memeriksa info pajak kendaraan Anda.</p>
+
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLScmrXnoSRwGNdOuKWjGGHMpbPwzTRAM2loSPownpmXQqEfLww/formResponse" method="POST" target="_blank">
+    
+    <label for="seri">Seri / BG Kendaraan *</label>
+    <input type="text" name="entry.456789012" id="seri" required placeholder="Contoh: B 1234 XYZ">
+
+    <label for="hp">Nomor HP / WhatsApp Pemohon *</label>
+    <input type="text" name="entry.567890123" id="hp" required placeholder="08xxxxxxxxxx">
+
+    <label for="cek">Cek nominal informasi pembayaran *</label>
+    <select name="entry.123456789" id="cek" required>
+      <option value="">-- Pilih --</option>
+      <option value="Ya">Ya</option>
+      <option value="Tidak">Tidak</option>
+    </select>
+
+    <label for="hubungi">Bersedia untuk dihubungi *</label>
+    <select name="entry.234567890" id="hubungi" required>
+      <option value="">-- Pilih --</option>
+      <option value="Ya">Ya</option>
+      <option value="Tidak">Tidak</option>
+    </select>
+
+    <label for="datang">Bersedia datang langsung *</label>
+    <select name="entry.345678901" id="datang" required>
+      <option value="">-- Pilih --</option>
+      <option value="Ya">Ya</option>
+      <option value="Tidak">Tidak</option>
+    </select>
+
+    <button type="submit">Kirim ke Google Form</button>
+  </form>
+
+  <p style="text-align:center; margin-top: 20px;">Atau langsung hubungi kami via WhatsApp:</p>
+  <a href="https://wa.me/message/RWIMPR75UE7FL1" target="_blank">
+    <button style="background-color: #25D366;">Hubungi via WhatsApp</button>
+  </a>
+</div>
+
+</body>
+  </html>
